@@ -1,0 +1,290 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+html, button, input, select, .pure-g [class*="pure-u"] {
+	font-family: "PT Sans", sans-serif;
+}
+
+body {
+	color: white;
+	background: url(../assets/background-picture.jpeg) no-repeat center center fixed;
+	background-size: cover;
+	height: 100vh;
+	min-width: 768px;
+}
+
+body::before {
+	content: '';
+	background-color: rgba(255, 255, 255, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+main {
+	margin: 0 auto;
+	padding: 2em;
+	width: 720px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+header {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 1.5em;
+	margin-bottom: 3em;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav button, nav a {
+	margin: 0 1em;
+	padding: 1em 2em;
+}
+
+form {
+	line-height: 2.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+#app {
+	height: 100%;
+}
+
+#app > div {
+	height: 100%;
+}
+
+#logo {
+	font-size: 1.25em;
+}
+
+#splash-button span {
+	position: relative;
+	top: -5px;
+}
+
+#rand {
+	display: none;
+}
+
+.rand-switch {
+	box-sizing: border-box;
+	margin: 0.5em auto;
+	width: 50px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: #e9e9e9;
+}
+
+.rand-switch-inner {
+	box-sizing: inherit;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+	position: relative;
+	top: 3px;
+	left: 3px;
+	background-color: white;
+}
+
+#rand:checked + .rand-switch {
+	background-color: #e45050;
+}
+
+#rand:checked + .rand-switch .rand-switch-inner {
+	left: 23px;
+}
+
+input[type="text"], select#ingredients {
+	background-color: #f9f9f9;
+	height: 52px;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+.pizza-container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.pizza-child {
+	flex: 1 1 0;
+	display: flex;
+	justify-content: center;
+}
+
+.pizza-size, .pizza-size-20, .pizza-size-30, .pizza-size-40 {
+	border: 3px solid #e9e9e9;
+	margin: 0 1em;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pizza-size-20 {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+
+.pizza-size-30 {
+	width: 75px;
+	height: 75px;
+	border-radius: 75px;
+}
+
+.pizza-size-40 {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+}
+
+.paper, .paper-white {
+	padding: 2em 10em 2.5em;
+	border-radius: 2px;
+}
+
+.container-relative {
+	position: relative;
+}
+
+.translucent {
+	color: white;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.white, .pizza-size, .pizza-size-20, .pizza-size-30, .pizza-size-40, .paper-white {
+	color: #515151;
+	background-color: white;
+}
+
+.red, input[type="radio"]:checked + div, .button-red, #splash-button {
+	color: white;
+	background-color: #e45050;
+}
+
+.green {
+	color: white;
+	background-color: #7cd38a;
+}
+
+.orange, .ingredient {
+	color: #515151;
+	background-color: #fff3db;
+}
+
+.orange-background, .plus-button {
+	background-color: #ffd486;
+}
+
+.white-text {
+	color: white;
+}
+
+.dark-text {
+	color: #515151;
+}
+
+.icon-bottom {
+	margin-top: 1.5em;
+}
+
+.button-large, .button-red, #splash-button {
+	padding: 1em 2em;
+	margin-right: 0;
+}
+
+.button-previous {
+	position: absolute;
+	top: 40px;
+	left: 30px;
+	background-color: transparent;
+	color: #515151;
+	border: none;
+}
+
+.plus-button {
+	height: 100%;
+	border: 5px solid white;
+}
+
+.icon-button {
+	display: inline-flex;
+	align-items: center;
+}
+
+.icon-left {
+	margin-right: 12px;
+}
+
+.icon-right {
+	margin-left: 12px;
+}
+
+.bottom-shadow, .button-red, #splash-button, .paper-white, .bottom-shadow-red {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.bottom-shadow-red {
+	border-bottom-color: #e45050;
+}
+
+.text-bold, header, .button-red, #splash-button {
+	font-weight: 700;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center, main {
+	text-align: center;
+}
+
+.column-parent {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.column {
+	max-width: 200px;
+}
+
+.ingredient-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.ingredient {
+	margin: 2px;
+}
+
+.red, input[type="radio"]:checked + div, .button-red, #splash-button {
+    color: white;
+    background-color: #e45050;
+}
